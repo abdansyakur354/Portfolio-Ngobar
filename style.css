@@ -1,0 +1,108 @@
+/* h1 {
+    text-align: center;
+} */
+
+html {
+    position: relative;
+}
+
+body {
+    margin-bottom: 120px;
+    margin-top: 30px;
+}
+
+.px-4 {
+    /* height: 500px; */
+    background-image: url(../img/header-bg.jpg);
+    /* background-color: aqua; */
+    background-attachment: fixed;
+    background-position: 0 -230px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.px-4 h1, .px-4 p {
+    text-shadow: 1px 1px 10px rgba(19, 5, 5, .5);
+}
+
+.px-4 img{
+    width: 200px;
+    box-shadow: 1px 1px 10px rgba(19, 5, 5, .2);
+
+}
+
+.about {
+    margin-top: -1rem;
+    min-height: 600px;
+}
+
+section {
+    min-height: 500px;
+}
+
+section .container .row {
+    margin: 1rem 0;
+}
+
+section .container .row .col-sm-12 h2 {
+    margin: 10px auto;
+    border-bottom: 3px solid rgba(19, 5, 5, 0.404);
+    padding-bottom: 10px;
+    width: 200px;
+}
+
+.left, .right {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 2.5s;
+}
+
+.right {
+    transform: translate(50px, 0) rotate(-15deg);
+}
+
+.left.muncul, .right.muncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.portofolio {
+    background-color: rgb(178, 250, 250);
+    /* min-height: 600px; */
+}
+
+.portofolio .thumbnail {
+    opacity: 0; 
+    transform: translate(0px, -40px);
+    transition: .5s;
+}
+.portofolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+section .container .row .col-sm-4 {
+    margin: .7rem 0;
+}
+
+.contact .container .row .col-sm-8 form {
+    margin: 0 auto;
+}
+
+.contact {
+    min-height: 600px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: grey;
+    width: 100%;
+    height: 120px;
+    padding-top: 25px;
+}
+
+footer p{
+    color: white;
+    font-size: 1.1rem;
+}
